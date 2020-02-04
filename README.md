@@ -41,7 +41,6 @@ Things you may want to cover:
 |body|text|null: false|
 |image|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
-｜message＿id｜integer｜null: false, foreign＿key: true｜
 
 ### Association
  　belongs_to :user
@@ -64,5 +63,5 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-　 belongs_to :group
-　 belongs_to :user
+　 has_many :groups
+　 has_many :users
