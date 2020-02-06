@@ -1,0 +1,40 @@
+.main-chat
+  .main-chat__header
+    .main-chat__header--group
+      %p.main-chat__header--group--name
+        桜を見る会
+      %p.main-chat__header--group--member
+        Member : aaa hiroyuki
+    = link_to "#", class:"main-chat__header--edit" do
+      %p.main-chat__header--edit--bottun
+        Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker
+          hiroyuki
+        %p.message__upper-info__date
+          2020/02/06(Thu) 14:28:33
+      %p.message__text
+        こんにちは
+
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker
+          hiroyuki
+        %p.message__upper-info__date
+          2020/02/06(Thu) 14:28:33
+      %p.message__text
+        こんにちは
+
+
+  .form
+    .new_message
+      .input-box
+        %input.input-box__text{placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{class: "input-box__image__file", type: "file"}
+      %input.submit-btn{type: "submit", value: "Send"}
+
+

@@ -1,0 +1,29 @@
+.side-bar
+  .side-bar__header
+    .side-bar__header--box
+      %p.side-bar__header--box--user-name 
+        masa
+      %ul.side-bar__header--box--menu
+        %li
+          = link_to "#" do
+            %i.fa.fa-edit
+          = link_to "#" do
+            %i.fa.fa-cog
+
+  .groups
+    = link_to "#", class: "group" do
+      .group
+        %p.group__group-name
+          桜を見る会
+        %p.group__latest-message
+          こんにちは
+
+    = link_to "#" do
+      .group
+        %p.group__group-name
+          高校
+        %p.group__latest-message
+          こんにちは
+
+
+    
