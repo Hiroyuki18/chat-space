@@ -13,7 +13,9 @@
       %p.main-chat__header--edit--bottun
         Edit
   .messages
-    = render partial: 'message', collection: @messages
+    -# = render partial: 'message', collection: @messages
+    = render @messages
+
     -# .message
     -#   .message__upper-info
     -#     %p.message__upper-info__talker
