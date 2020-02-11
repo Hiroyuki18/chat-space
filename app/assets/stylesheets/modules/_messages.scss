@@ -82,9 +82,21 @@
         color: #333333;
       }
       &--member{
-        font-size: 12px;
-        color: #999999;
-        margin-top: 15px;
+        display: flex;
+        &--member{
+          font-size: 12px;
+          color: #999999;
+          margin-top: 15px;
+          &--list{
+            display: flex;
+            font-size: 12px;
+            color: #999999;
+            margin-top: 15px;
+            li{
+              margin-left: 5px;
+            }
+          }
+        }
       }
     }
     &--edit{
@@ -128,30 +140,72 @@
       }
     }
   }
+  // .form{
+  //   height: 90px;
+  //   width: 100%;
+  //   background-color: #d2d2d2;
+  //   bottom: 0px;
+  //   z-index: 1;
+  //   padding: 20px 40px;
+  //   .new_message{
+  //     display: flex;
+  //     .input-box{
+  //       position: relative;
+  //       width: calc(100% - 100px);
+  //       background-color: white;
+  //       display: flex;
+  //       &__text{
+  //         height: 50px;
+  //         width: 100%;
+  //         padding: 0 40px 0 10px;
+  //         color: black;
+  //       }
+  //       &__image{
+  //         position: absolute;
+  //         top: 15px;
+  //         right: 10px;
+  //         &__file{
+  //           display: none;
+  //         }
+  //       }
+  //     }
+  //     .submit-btn{
+  //       width: 100px;
+  //       height: 50px;
+  //       padding: 0 30px;
+  //       margin-left: 15px;
+  //       background-color: #38aef0;
+  //       color: white;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
   .form{
     height: 90px;
-    width: 100%;
-    background-color: #d2d2d2;
+    padding: 20px 40px;
+    background-color: #ddd;
     bottom: 0px;
     z-index: 1;
-    padding: 20px 40px;
+    width: 100%;
     .new_message{
       display: flex;
+      width: 100%;
+      position: relative;
       .input-box{
-        position: relative;
+        width: 100%;
         width: calc(100% - 100px);
-        background-color: white;
-        display: flex;
         &__text{
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
-          color: black;
+          color: #434a54;
+          border-style: none;
         }
         &__image{
           position: absolute;
           top: 15px;
-          right: 10px;
+          right: 130px;
+          cursor: pointer;
           &__file{
             display: none;
           }
